@@ -11,7 +11,6 @@ class CalculatorViewModel: ViewModel() {
 
        // all Logik ska ligga i Viewmodellen
 
-
     fun onAction(action: CalculatedAction) {
         when(action) {
             is CalculatedAction.Number -> enterNumber(action.number)
