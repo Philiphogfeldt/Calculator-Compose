@@ -9,6 +9,9 @@ class CalculatorViewModel: ViewModel() {
     var state by mutableStateOf(CalculatorState())
     private set
 
+       // all Logik ska ligga i Viewmodellen
+
+
     fun onAction(action: CalculatedAction) {
         when(action) {
             is CalculatedAction.Number -> enterNumber(action.number)

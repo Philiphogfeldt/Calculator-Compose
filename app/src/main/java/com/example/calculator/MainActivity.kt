@@ -27,12 +27,8 @@ class MainActivity : ComponentActivity() {
                 val buttonSpacing = 8.dp
                 Calculator(
                     state = state,
-                    onAction = viewModel::onAction,
+                    viewModel = viewModel,
                     buttonSpacing = buttonSpacing,
-                    modifier = Modifier
-                        .fillMaxSize()
-                        .background(MediumGrey)
-                        .padding(16.dp)
                 )
             }
         }
